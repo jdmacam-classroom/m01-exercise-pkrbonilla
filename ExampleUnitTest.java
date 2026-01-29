@@ -1,17 +1,39 @@
 package com.example.kleinapplication;
 
-import org.junit.Test;
+import android.os.Bundle;
 
-import static org.junit.Assert.*;
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
- */
-public class ExampleUnitTest {
-    @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+
+
+public class MainActivity extends AppCompatActivity {
+
+    TextView quoteText;
+    Button btnQuote;
+    ArrayList<String> quotes;
+    Random random;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main);
+
+        quoteText= findViewById(R.id.quoteText);
+        btnQuote= findViewById(R.id.btnQuote);
+        random= new Random();
+
+            initialize Quotes();
+        });
+
+        sorry sir di ko po talaga alam kung paano mag code. gusto ko pong matuto pero di ko talaga magets
     }
 }
+
+sorry sir di ko po talaga alam kung paano mag code. gusto ko pong matuto pero di ko talaga magets
+:(
+        ):
